@@ -36,7 +36,7 @@ void setup_wifi() {
     delay(3000);
     /* Select here whether to sleep or to reset, if came out 
      *  of deep sleep and unable to connect to network */
-    //sleep();
+    //ESP.deepSleep(SLEEP_TIME * 1000, WAKE_RF_DEFAULT); // microseconds
     ESP.reset();
     delay(5000);
   }

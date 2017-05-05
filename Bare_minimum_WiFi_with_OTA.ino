@@ -16,6 +16,7 @@ uint8_t OTAProgressIndicator;
 Ticker heartbeat_Tick;
 
 #define LEDPIN  2   // LED pin to show heartbeat on; 2 is internal on ESP-12
+#define SLEEP_TIME  10*60*1000 // milliseconds
 
 void setup() {
   Serial.begin(115200);
